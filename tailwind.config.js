@@ -6,17 +6,9 @@ module.exports = {
   important: true,
   mode: "jit",
   content: [
-    "./src/styles/**/*.css",
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/layouts/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{css,js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      mobilenav: { max: '1100px' },
-      desktopnav: { min: '1101px' },
-      ...defaultTheme.screens,
-    },
     extend: {
       fontSize: {
         'navbar-height': 'var(--navbar-height)',
