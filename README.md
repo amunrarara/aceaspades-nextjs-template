@@ -22,21 +22,32 @@ This is a starter template for NextJS projects. it includes:
 
 That's it!
 
-# Testing
-## Cypress
+## Next Steps
+
+- Change the project name, title, description, etc. in:
+-- package.json
+-- lib/utils/AppConfig.ts
+
+- Change favicons in `public/icons/favicons`
+- Change og-image `public/images/og-image.png`
+
+# Design Philosophies and Chosen Libraries
+
+## Testing
+### Cypress
 
 ---
-# Precommit Hooks
-## Husky
+## Precommit Hooks
+### Husky
 ### Commitlint?
 I've opted out of using commitlint for the time being, but I may add it in the future.
 
 ---
 
-# Linting
+## Linting
 
 A combination of ESLint, Prettier, and Husky are used to lint the codebase.
 
-# Styling
+## Styling
 
 Tailwind for most styling, with custom CSS.
