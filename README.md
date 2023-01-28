@@ -31,23 +31,29 @@ That's it!
 - Change favicons in `public/icons/favicons`
 - Change og-image `public/images/og-image.png`
 
-# Design Philosophies and Chosen Libraries
+# Libraries
 
 ## Testing
-### Cypress
+Cypress E2E + Component Testing
 
----
 ## Precommit Hooks
-### Husky
-### Commitlint?
-I've opted out of using commitlint for the time being, but I may add it in the future.
-
----
+Husky is engaging Lint-Staged, which in turn is calling ESLint (fix) and Typescript (no-emit) before every commit.
 
 ## Linting
-
-A combination of ESLint, Prettier, and Husky are used to lint the codebase.
+A combination of ESLint (fix) and Typescript (no-emit) are used to lint the codebase.
 
 ## Styling
+Tailwind for utility classes, with custom CSS. I'm not using SASS yet, though I'm definitely going to adding it in the near future.
 
-Tailwind for most styling, with custom CSS.
+## State Management
+- `zustand` all the way! Client state management as it should be: stores that are easy to create, consume, and manipulate, without *any* boilerplate necessary.
+- `useSWR` as a fetch-and-cache system is excellent.
+
+## Security, Cryptography
+- `jsonwebtoken` for singing / decoding JWTs,
+- `bcrypt` for hashing, 
+- `uuid` to generate UUIDs
+
+## Utilities
+- `cookies-next` has been the best cookie helper (for NextJS) I've found thus far (and I've tried quite a few!)
+- `lodash` because... it's lodash!
