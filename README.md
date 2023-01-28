@@ -1,15 +1,6 @@
 # NextJS Template - by Acea Spades
 
-This is a starter template for NextJS projects. it includes:
-
-- NextJS
-- Typescript
-- TailwindCSS
-- ESLint
-- Prettier
-- Husky
-- Lint Staged
-- Cypress
+This is a starter template for NextJS projects.
 
 # Get Started
 
