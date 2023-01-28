@@ -25,16 +25,23 @@ That's it!
 # Libraries
 
 ## Testing
-Cypress E2E + Component Testing
+- `cypress` for E2E + Component Testing
 
 ## Precommit Hooks
-Husky is engaging Lint-Staged, which in turn is calling ESLint (fix) and Typescript (no-emit) before every commit.
+- Husky - Precommit Hooks
+- Lint-Staged - Staged Files Linter
+
+`husky` is engaging `lint-staged`, which in turn is calling `eslint` (fix) and `typescript` (no-emit) before every commit.
 
 ## Linting
-A combination of ESLint (fix) and Typescript (no-emit) are used to lint the codebase.
+- ESLint - Linter
+- Typescript - Transpiler & Type Safety Checking
+A combination of `eslint` (fix) and `typescript` (no-emit) are used to lint the codebase.
 
 ## Styling
-Tailwind for utility classes, with custom CSS. I'm not using SASS yet, though I'm definitely going to adding it in the near future.
+- TailwindCSS - Utility Classes
+
+`tailwind` with custom CSS. I'm not using SASS yet, though I'm definitely going to adding it in the near future.
 
 ## State Management
 - `zustand` all the way! Client state management as it should be: stores that are easy to create, consume, and manipulate, without *any* boilerplate necessary.
