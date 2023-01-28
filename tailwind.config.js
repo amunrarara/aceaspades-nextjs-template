@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 /* eslint-disable import/no-extraneous-dependencies */
-const defaultTheme = require('tailwindcss/defaultTheme');
+// const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   important: true,
-  mode: "jit",
-  content: [
-    "./src/**/*.{css,js,ts,jsx,tsx}",
-  ],
+  mode: 'jit',
+  content: ['./src/**/*.{css,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontSize: {
@@ -17,8 +15,8 @@ module.exports = {
         'pulse-slow': 'pulse 3s ease-out infinite',
       },
       dropShadow: {
-        'dark': '0 3px 3px rgba(0, 0, 0, 0.75)',
-        'darkest': '0 2px 2px rgba(0, 0, 0, 1)',
+        dark: '0 3px 3px rgba(0, 0, 0, 0.75)',
+        darkest: '0 2px 2px rgba(0, 0, 0, 1)',
       },
     },
   },
