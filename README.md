@@ -15,6 +15,7 @@ That's it!
 
 ## Next Steps
 
+- In `package.json`, change the `"license"` and `"private"` fields as necessary 
 - Change the project name, title, description, etc. in:
 -- package.json
 -- lib/utils/AppConfig.ts
