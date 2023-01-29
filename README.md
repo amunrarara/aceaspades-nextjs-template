@@ -17,8 +17,8 @@ That's it!
 
 - In `package.json`, change the `"license"` and `"private"` fields as necessary 
 - Change the project name, title, description, etc. in:
--- package.json
--- lib/utils/AppConfig.ts
+    - package.json
+    - lib/utils/AppConfig.ts
 
 - Change favicons in `public/icons/favicons`
 - Change og-image `public/images/og-image.png`
