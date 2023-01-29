@@ -5,7 +5,8 @@
     "email": "nextlevel@sundragon.tech"
   },
   "version": "1.0.0",
-  "private": true,
+  "license:" "GPL-3.0-or-later"
+  "private": false,
   "scripts": {
     "dev": "next dev -H 127.0.0.1 -p 3030",
     "build": "next build",
