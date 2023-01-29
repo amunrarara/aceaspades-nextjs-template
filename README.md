@@ -1,6 +1,6 @@
 # NextJS Template - by Acea Spades
 
-This is a starter template for NextJS projects.
+This is a starter template for NextJS projects. 
 
 # Get Started
 
