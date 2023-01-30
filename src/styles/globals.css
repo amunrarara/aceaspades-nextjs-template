@@ -1,4 +1,12 @@
 /* ------------------------- */
+/*          Imports          */
+/* ------------------------- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------- */
 /*     Debug Options         */
 /*     * to activate         */
 /* ------------------------- */
@@ -15,18 +23,18 @@
 /* ------------------------- */
 
 :root {
-    /* #000000, rgb(0, 0, 0), hsl(0, 0%, 0%) */
-    --clr-dark: 0 0% 0%;
+    /* Colors */
+    --clr-black: 0 0% 0%; /* #000000, rgb(0, 0, 0), hsl(0, 0%, 0%) */
+    --clr-purple: 264 80% 30%; /* #420f8d, rgb(66, 15, 141), hsl(264, 80%, 30%) */
+    --clr-orange-500: 30 100% 50%; /* #f97316 rgb(249,115,22) hsl(25,95%,53%) */
+    --clr-white: 0 0% 100%; /* #FFFFFF, rgb(255, 255, 255), hsl(0, 0%, 100%) */
 
-    /* #420f8d, rgb(66, 15, 141), hsl(264, 80%, 30%) */
-    --clr-medium: 264 80% 30%;
-
-    /* #ebdffc, rgb(235, 223, 252), hsl(265, 83%, 93%) */
-    --clr-light: 265 83% 93%;
-
-    /* #FFFFFF, rgb(255, 255, 255), hsl(0, 0%, 100%) */
-    --clr-white: 0 0% 100%;
-
+    /* Typography */
+    --fs-xl: clamp(3.5rem, 5vw + 1rem, 12rem);
+    --fs-lg: clamp(1.5rem, 2vw + 1rem, 5rem);
+    --fs-md: clamp(1.25rem, 1.5vw + 1rem, 3rem);
+    --fs-sm: clamp(1rem, 1.5vw + 1rem, 2rem);
+    --fs-xs: clamp(0.75rem, 1.5vw + 1rem, 1.5rem);
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
@@ -36,10 +44,12 @@
     --fs-300: 1rem;
     --fs-200: 0.875rem;
 
+    /* Fonts */
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
 
+    /* Spacing */
     --spacing-1: 4.75px;
     --spacing-2: 2.7px;
     --spacing-3: 2.35px;
@@ -155,7 +165,3 @@ html, body {
 /* ------------------------- */
 /*        Components         */
 /* ------------------------- */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
