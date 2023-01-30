@@ -35,14 +35,32 @@
     --fs-md: clamp(1.25rem, 1.5vw + 1rem, 3rem);
     --fs-sm: clamp(1rem, 1.5vw + 1rem, 2rem);
     --fs-xs: clamp(0.75rem, 1.5vw + 1rem, 1.5rem);
-    --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+
+    /* Font Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.75rem;
+    --fs-7xl: 4.5rem;
+    --fs-8xl: 6rem;
+    --fs-9xl: 8rem;
+
+    /* Line Heights */
+    --lh-xs: 1rem;
+    --lh-sm: 1.25rem;
+    --lh-base: 1.5rem;
+    --lh-lg: 1.75rem;
+    --lh-xl: 1.75rem;
+    --lh-2xl: 2rem;
+    --lh-3xl: 2.25rem;
+    --lh-4xl: 2.5rem;
+    --lh-5xl: 1rem;
 
     /* Fonts */
     --ff-serif: "Bellefair", serif;
