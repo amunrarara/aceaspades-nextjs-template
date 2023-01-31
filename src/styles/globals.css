@@ -112,10 +112,17 @@ html, body {
 
 :root {
     /* Colors */
-    --clr-black: 0 0% 0%; /* #000000, rgb(0, 0, 0), hsl(0, 0%, 0%) */
-    --clr-purple: 264 80% 30%; /* #420f8d, rgb(66, 15, 141), hsl(264, 80%, 30%) */
-    --clr-orange-500: 30 100% 50%; /* #f97316 rgb(249,115,22) hsl(25,95%,53%) */
+    --clr-black: 0 0% 0%; /* #000000 rgb(0, 0, 0) hsl(0, 0%, 0%) */
+    --clr-dark: 0 0% 10%; /* hsl(0 0% 10%) */
+    --clr-medium: 0 0% 40%; /*hsl(0, 0%, 40%) */
+    --clr-light: 0 0% 75%; /* hsl(0, 0%, 75%) */
     --clr-white: 0 0% 100%; /* #FFFFFF, rgb(255, 255, 255), hsl(0, 0%, 100%) */
+
+    /* Color Palette */
+    --clr-text: var(--clr-white);
+    --clr-header: var(--clr-light);
+    --clr-background: var(--clr-black);
+    --clr-button: var(--clr-medium);
 
     /* Typography */
     --fs-h1: clamp(3.5rem, 5vw + 1rem, 12rem);
