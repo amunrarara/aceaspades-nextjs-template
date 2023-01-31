@@ -8,6 +8,18 @@ module.exports = {
   content: ['./src/**/*.{css,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      colors: {
+        'clr-darkest': 'var(--clr-darkest)',
+        'clr-darker': 'var(--clr-darker)',
+        'clr-dark': 'var(--clr-dark)',
+        'clr-medium': 'var(--clr-medium)',
+        'clr-light': 'var(--clr-light)',
+        'clr-lighter': 'var(--clr-lighter)',
+        'clr-lightest': 'var(--clr-lightest)',
+        'clr-text': 'var(--clr-text)',
+        'clr-text-header': 'var(--clr-text-header)',
+        'clr-background': 'var(--clr-background)',
+      },
       fontSize: {
         'navbar-height': 'var(--navbar-height)',
         h1: ['var(--fs-h1)', { lineHeight: 'var(-lh-h1)' }],

@@ -6,6 +6,90 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import "fontsheet.css"; */
+
+/* ------------------------- */
+/*     Custom Properties     */
+/* ------------------------- */
+
+:root {
+    /* Base Colors */
+    --clr-black: 0 0% 0%; /* #000000 rgb(0, 0, 0) hsl(0, 0%, 0%) */
+    --clr-white: 0 0% 100%; /* #FFFFFF, rgb(255, 255, 255), hsl(0, 0%, 100%) */
+
+    --clr-darkest: var(--clr-black);
+    --clr-darker: 0 0% 10%; /* hsl(0 0% 10%) */
+    --clr-dark: 0 0% 20%; /* hsl(0 0% 20%) */
+    --clr-medium: 0 0% 40%; /*hsl(0, 0%, 40%) */
+    --clr-light: 0 0% 60%; /* hsl(0, 0%, 60%) */
+    --clr-lighter: 0 0% 80%; /* hsl(0, 0%, 80%) */
+    --clr-lightest: var(--clr-white);
+
+    --clr-text: var(--clr-lightest);
+    --clr-text-header: var(--clr-lightest);
+    --clr-background: var(--clr-ws-darker);
+
+    /* Color Theme */
+    /* --clr-theme-darkest: ...
+    --clr-theme-darker: ...
+    --clr-theme-dark: ...
+    --clr-theme-medium: ...
+    --clr-theme-light: ...
+    --clr-theme-lighter: ...
+    --clr-theme-lightest: ... */
+
+    /* Typography */
+    --fs-h1: clamp(3.5rem, 5vw + 1rem, 12rem);
+    --fs-h2: clamp(1.5rem, 2vw + 1rem, 5rem);
+    --fs-h3: clamp(1.25rem, 1.5vw + 1rem, 3rem);
+    --fs-h4: clamp(1rem, 1.5vw + 1rem, 2rem);
+    --fs-h5: clamp(0.75rem, 1.5vw + 1rem, 1.5rem);
+
+    /* Font Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: var(--fs-base);
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 3.75rem;
+    --fs-7xl: 4.5rem;
+    --fs-8xl: 6rem;
+    --fs-9xl: 8rem;
+
+    /* Line Heights */
+    --lh-h1: 1.1;
+    --lh-h2: 1.3;
+    --lh-h3: 1.3;
+    --lh-h4: 1.3;
+    --lh-h5: 1.3;
+
+    --lh-xs: 1rem;
+    --lh-sm: 1.25rem;
+    --lh-base: 1.5rem;
+    --lh-lg: 1.75rem;
+    --lh-xl: 1.75rem;
+    --lh-2xl: 2rem;
+    --lh-3xl: 2.25rem;
+    --lh-4xl: 2.5rem;
+    --lh-5xl: 1rem;
+
+    /* Font Families */
+    --ff-serif: "", serif;
+    --ff-sans: "", sans-serif;
+    --ff-sans-cond: "", sans-serif;
+
+    /* Spacing */
+    --spacing-1: 4.75px;
+    --spacing-2: 2.7px;
+    --spacing-3: 2.35px;
+    --navbar-height: 4.1rem;
+}
+
 /* ------------------------- */
 /*          Reset            */
 /* ------------------------- */
@@ -49,11 +133,11 @@ p {
 /* Body */
 
 body {
-    font-family: var(--ff-sans-normal);
-    font-size: var(--fs-300);
-    background-color: hsl(var(--clr-dark));
-    color: hsl(var(--clr-white));
-    line-height: 1.5;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    background-color: hsl(var(--clr-darker));
+    color: hsl(var(--clr-lightest));
+    line-height: hsl(var(--lh-base));
     min-height: 100vh;
 }
 
@@ -93,7 +177,6 @@ html, body {
     overscroll-behavior: none;
 }
 
-
 /* ------------------------- */
 /*     Debug Options         */
 /*     * to activate         */
@@ -107,74 +190,68 @@ html, body {
   }
 
 /* ------------------------- */
-/*     Custom Properties     */
+/*         Globals           */
 /* ------------------------- */
 
-:root {
-    /* Colors */
-    --clr-black: 0 0% 0%; /* #000000 rgb(0, 0, 0) hsl(0, 0%, 0%) */
-    --clr-dark: 0 0% 10%; /* hsl(0 0% 10%) */
-    --clr-medium: 0 0% 40%; /*hsl(0, 0%, 40%) */
-    --clr-light: 0 0% 75%; /* hsl(0, 0%, 75%) */
-    --clr-white: 0 0% 100%; /* #FFFFFF, rgb(255, 255, 255), hsl(0, 0%, 100%) */
-
-    /* Color Palette */
-    --clr-text: var(--clr-white);
-    --clr-header: var(--clr-light);
-    --clr-background: var(--clr-black);
-    --clr-button: var(--clr-medium);
-
-    /* Typography */
-    --fs-h1: clamp(3.5rem, 5vw + 1rem, 12rem);
-    --fs-h2: clamp(1.5rem, 2vw + 1rem, 5rem);
-    --fs-h3: clamp(1.25rem, 1.5vw + 1rem, 3rem);
-    --fs-h4: clamp(1rem, 1.5vw + 1rem, 2rem);
-    --fs-h5: clamp(0.75rem, 1.5vw + 1rem, 1.5rem);
-
-    /* Font Sizes */
-    --fs-xs: 0.75rem;
-    --fs-sm: 0.875rem;
-    --fs-base: 1rem;
-    --fs-lg: 1.125rem;
-    --fs-xl: 1.25rem;
-    --fs-2xl: 1.5rem;
-    --fs-3xl: 1.875rem;
-    --fs-4xl: 2.25rem;
-    --fs-5xl: 3rem;
-    --fs-6xl: 3.75rem;
-    --fs-7xl: 4.5rem;
-    --fs-8xl: 6rem;
-    --fs-9xl: 8rem;
-
-    /* Line Heights */
-    --lh-h1: 1.1;
-    --lh-h2: 1.3;
-    --lh-h3: 1.3;
-    --lh-h4: 1.3;
-    --lh-h5: 1.3;
-
-    --lh-xs: 1rem;
-    --lh-sm: 1.25rem;
-    --lh-base: 1.5rem;
-    --lh-lg: 1.75rem;
-    --lh-xl: 1.75rem;
-    --lh-2xl: 2rem;
-    --lh-3xl: 2.25rem;
-    --lh-4xl: 2.5rem;
-    --lh-5xl: 1rem;
-
-    /* Fonts */
-    --ff-serif: "Bellefair", serif;
-    --ff-sans-cond: "Barlow Condensed", sans-serif;
-    --ff-sans-normal: "Barlow", sans-serif;
-
-    /* Spacing */
-    --spacing-1: 4.75px;
-    --spacing-2: 2.7px;
-    --spacing-3: 2.35px;
-    --navbar-height: 4.1rem;
+html,
+body {
+  color: hsl(var(--clr-text));
 }
 
+html {
+    color-scheme: dark;
+}
+
+body {
+    background: hsl(var(--clr-background));
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    font-family: var(--ff-sans);
+    font-weight: 400;
+  }
+
+h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    font-family: var(--ff-serif);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    font-family: var(--ff-sans);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    font-family: var(--ff-sans);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    font-family: var(--ff-serif);
+    font-weight: 400;
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h5);
+    font-family: var(--ff-serif);
+    font-weight: 400;
+}
 
 /* ------------------------- */
 /*     Utility Classes       */
@@ -193,8 +270,8 @@ html, body {
 /* Typography */
 
 .ff-serif { font-family: var(--ff-serif); }
+.ff-sans { font-family: var(--ff-sans); }
 .ff-sans-cond { font-family: var(--ff-sans-cond); }
-.ff-sans-normal { font-family: var(--ff-sans-normal); }
 
 /* ------------------------- */
 /*        Components         */
