@@ -10,6 +10,11 @@ module.exports = {
     extend: {
       fontSize: {
         'navbar-height': 'var(--navbar-height)',
+        h1: ['var(--fs-h1)', { lineHeight: 'var(-lh-h1)' }],
+        h2: ['var(--fs-h2)', { lineHeight: 'var(-lh-h2)' }],
+        h3: ['var(--fs-h3)', { lineHeight: 'var(-lh-h3)' }],
+        h4: ['var(--fs-h4)', { lineHeight: 'var(-lh-h4)' }],
+        h5: ['var(--fs-h5)', { lineHeight: 'var(-lh-h5)' }],
         xs: ['var(--fs-xs)', { lineHeight: 'var(--lh-xs)' }],
         sm: ['var(--fs-sm)', { lineHeight: 'var(--lh-sm)' }],
         base: ['var(--fs-base)', { lineHeight: 'var(--lh-base)' }],
