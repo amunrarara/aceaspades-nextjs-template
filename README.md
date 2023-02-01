@@ -1,6 +1,6 @@
 # NextJS Template - by Acea Spades
 
-This is a starter template for NextJS projects. 
+This is a starter template for NextJS projects.
 
 # Get Started
 
@@ -15,7 +15,7 @@ That's it!
 
 ## Next Steps
 
-- In `package.json`, change the `"license"` and `"private"` fields as necessary 
+- In `package.json`, change the `"license"` and `"private"` fields as necessary
 - Change the project name, title, description, etc. in:
     - package.json
     - lib/utils/AppConfig.ts
@@ -23,7 +23,13 @@ That's it!
 - Change favicons in `public/icons/favicons`
 - Change og-image `public/images/og-image.png`
 
+## Dev Container
+There's a Docker Dev Container included in this repo. If you're using VSCode, you can open the repo in a container by running the `Remote-Containers: Open Folder in Container...` command (be sure the extension is installed).
+
 # Libraries
+
+## Dependency Graph Visualization
+- `dependency-cruiser` generates dependency graphs. It pipes the result into `graphviz` to generate a graph (graphviz must be installed locally on your machine).
 
 ## Testing
 - `cypress` for E2E + Component Testing
@@ -50,7 +56,7 @@ A combination of `eslint` (fix) and `typescript` (no-emit) are used to lint the 
 
 ## Security, Cryptography
 - `jsonwebtoken` for singing / decoding JWTs,
-- `bcrypt` for hashing, 
+- `bcrypt` for hashing,
 - `uuid` to generate UUIDs
 
 ## Utilities
